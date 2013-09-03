@@ -1,0 +1,28 @@
+root
+{ 
+    display: block;
+}
+
+body {
+    background: #ff2d00;
+}
+
+.tease-box{
+    position: fixed;
+    width: 30%;
+    height: 100px;
+    background-color: bisque;
+    border-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+    bottom: 50px;
+    margin-left: 40%;
+}
+
+.welcome-message{
+    font-size: larger;
+    font-family: fantasy;
+}
+
