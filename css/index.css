@@ -1,3 +1,4 @@
+@font-face { font-family: StarTrek; src: url('/css/fonts/StarTrek_future.ttf'); } 
 root
 { 
     display: block;
@@ -5,6 +6,16 @@ root
 
 body {
     background: #ff2d00;
+}
+
+.banner {
+    font-family: StarTrek;
+    font-size: 250px;
+    height: 50%
+}
+
+.banner-footer {
+    font-size: 52px;
 }
 
 .tease-box{

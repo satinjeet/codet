@@ -14,8 +14,11 @@ and open the template in the editor.
     </head>
     <body>
         <center>
-            <div class="place-holder">
-                
+            <div class="banner">
+                Code Trek<br>
+                <div class="banner-footer">
+                    Boldly code , what no man has coded before ......
+                </div>
             </div>
             <div class="tease-box">
                 <div class="welcome-message">
