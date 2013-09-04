@@ -6,7 +6,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
+        <title>CodeTrek</title>
         <link rel="stylesheet" href="/css/index.css" />
         <script src="/js/jquery-1.8.3.js"></script>
         <script src="/js/jquery-ui.js"></script>

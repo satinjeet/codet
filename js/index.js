@@ -1,7 +1,7 @@
 $(document).ready(function(){
     window.clicks = 0;
 
-    window.limit = 5;
+    window.limit = 3;
     window.fns = null;
 
     function anim() {
