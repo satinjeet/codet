@@ -10,7 +10,8 @@ and open the template in the editor.
         <link rel="stylesheet" href="/css/index.css" />
         <script src="/js/jquery-1.8.3.js"></script>
         <script src="/js/jquery-ui.js"></script>
-        <script src="/js/index.js"></script>
+        <script src="/js/jquery.cookie.js"></script>
+        <script src="/js/main.js"></script>
     </head>
     <body>
         <center>
@@ -28,5 +29,6 @@ and open the template in the editor.
                 </div>
             </div>
         </center>
+        <?php echo file_get_contents(__DIR__ . "/parts/tracker.content"); ?>
     </body>
 </html>

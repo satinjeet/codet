@@ -17,7 +17,8 @@ $(document).ready(function(){
                 Sorry For Messing Around :P :) ;)..\n\
                 Hang On , letme redirect you to main site"
             );
-            window.location.href = "/main.php";
+            $.cookie("messedWith", "yes");
+            window.location.href = "/";
         }
     });
     
