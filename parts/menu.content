@@ -1,0 +1,11 @@
+<nav id="menu" class="nav">
+    <ul>
+        <li class="styled">Home</li>
+        <li class="styled">Tutorial Guides</li>
+        <li class="styled">About Us</li>
+    </ul>
+
+    <select id="color-selector">
+        
+    </select>
+</nav>
