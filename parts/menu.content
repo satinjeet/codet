@@ -1,8 +1,8 @@
 <nav id="menu" class="nav">
     <ul>
-        <li class="styled">Home</li>
-        <li class="styled">Tutorial Guides</li>
-        <li class="styled">About Us</li>
+        <li class="styled"><a href="#home">Home</a></li>
+        <li class="styled"><a href="#tuts">Tutorial Guides</a></li>
+        <li class="styled"><a href="#aboutus">About Us</a></li>
     </ul>
 
     <select id="color-selector">
