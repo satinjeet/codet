@@ -16,11 +16,16 @@ include_once __DIR__ . "/parts/Content.php";
         <?php 
             echo Content::render("menu");
         ?>
-        <?php 
-            echo Content::render("container");
-        ?>
+        <div id="container" class="container">
+            <?php
+                echo Content::render("home");
+            ?>
+        </div>
         <?php 
             echo Content::render("tracker", false);
         ?>
+        <div id="lightbox">
+            <img src="css/images/36.gif" />
+        </div>
     </body>
 </html>
