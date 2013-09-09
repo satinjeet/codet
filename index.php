@@ -22,7 +22,7 @@ include_once __DIR__ . "/parts/Content.php";
             ?>
         </div>
         <?php 
-            echo Content::render("tracker", false);
+            echo Content::render("tracker");
         ?>
         <div id="lightbox">
             <img src="css/images/36.gif" />

@@ -13,6 +13,7 @@ window.Application = (function() {
 
   Application.prototype.load = function(e) {
     var req, route;
+    console.log(e.target);
     route = $(e.target).attr("href");
     return req = $.ajax({
       url: "/parts/get.php",
@@ -40,7 +41,7 @@ window.BootStrap = (function() {
   function BootStrap(app) {
     this.app = app;
     this.parseRoute = __bind(this.parseRoute, this);
-    $(".styled a").live("click", this.parseRoute);
+    $("#menu li").live("click", this.parseRoute);
   }
 
   BootStrap.prototype.parseRoute = function(e) {
