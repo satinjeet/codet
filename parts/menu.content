@@ -1,11 +1,13 @@
-<nav id="menu" class="nav">
-    <ul>
-        <li href="#home" class="styled">Home</li>
-        <li href="#tuts" class="styled">Tutorial Guides</li>
-        <li href="#aboutus" class="styled">About Us</li>
-    </ul>
+<div id="fadeout">
+    <nav id="menu" class="nav">
+        <ul>
+            <li href="#home" class="styled">Home</li>
+            <li href="#tuts" class="styled">Tutorial Guides</li>
+            <li href="#aboutus" class="styled">About Us</li>
+        </ul>
 
-    <select id="color-selector">
-        
-    </select>
-</nav>
+        <select id="color-selector">
+
+        </select>
+    </nav>
+</div>

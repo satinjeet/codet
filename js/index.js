@@ -13,7 +13,7 @@ window.Application = (function() {
 
   Application.prototype.load = function(e) {
     var req, route;
-    console.log(e.target);
+    $("#container").hide(500);
     route = $(e.target).attr("href");
     return req = $.ajax({
       url: "/parts/get.php",
@@ -26,7 +26,8 @@ window.Application = (function() {
   };
 
   Application.prototype.render = function(response) {
-    return $("#container").html(response);
+    $("#container").html(response);
+    return $("#container").show(500);
   };
 
   return Application;
