@@ -1,4 +1,4 @@
-var boot,
+var Events,
   __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
 window.Application = (function() {
@@ -13,7 +13,6 @@ window.Application = (function() {
 
   Application.prototype.load = function(e) {
     var req, route;
-    $("#container").hide(500);
     route = $(e.target).attr("href");
     return req = $.ajax({
       url: "/parts/get.php",
@@ -26,8 +25,7 @@ window.Application = (function() {
   };
 
   Application.prototype.render = function(response) {
-    $("#container").html(response);
-    return $("#container").show(500);
+    return $("#container").html(response);
   };
 
   return Application;
@@ -53,4 +51,28 @@ window.BootStrap = (function() {
 
 })();
 
-boot = new BootStrap(new Application);
+Events = (function() {
+  function Events() {
+    this.hideShow = __bind(this.hideShow, this);
+    this.init = __bind(this.init, this);
+  }
+
+  Events.prototype.init = function() {
+    return $(".uncover").live("click", this.hideShow);
+  };
+
+  Events.prototype.hideShow = function(e) {
+    var targetEl;
+    targetEl = $(e.currentTarget).attr("data-target");
+    return $("#" + targetEl).slideToggle(500);
+  };
+
+  return Events;
+
+})();
+
+$(document).ready(function() {
+  window.boot = new BootStrap(new Application);
+  window.evs = new Events;
+  return evs.init();
+});

@@ -24,4 +24,17 @@ class window.BootStrap
   parseRoute: (e)=>
     @app.load e
     
-boot = new BootStrap new Application
+    
+class Events
+
+  init: =>
+    $(".uncover").live "click", @hideShow
+    
+  hideShow: (e)=>
+    targetEl = $(e.currentTarget).attr "data-target"
+    $("##{targetEl}").slideToggle 500
+    
+$(document).ready ->
+  window.boot = new BootStrap new Application
+  window.evs = new Events
+  evs.init()

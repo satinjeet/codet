@@ -1,17 +1,33 @@
-<div class="banner-footer">
+<div>
     <div class="placeholder">
 
     </div>
     <div>
-        Want Some Help with something.. Feel free to beam us the question :)
+        <br>
+        <div class="header warning">
+            Our Query Transporter Will be Up soon. sorry for making you wait. LLAP
+        </div>
+        <div class="header">
+            Want Some Help with something.. Feel free to beam us the question :)
+        </div>
+        <br>
+        <br>
         <form id="tut-form">
             <table class="form">
-                <tr><td colspan="2"><input type="text" name="email"/></td></tr>
-                <tr><td colspan="2"><input type="text" name="dname" /></td></tr>
-                <tr><td colspan="2"><textarea name="ques" ></textarea></td></tr>
+                <tr><td colspan="2"><input type="text" name="email" disabled="disabled" /></td></tr>
+                <tr><td colspan="2"><input type="text" name="dname" disabled="disabled" /></td></tr>
                 <tr>
-                    <td><input type="submit" value="Ask it" name="submit" disabled="disabled" /></td>
-                    <td><button id="hideForm">Hide It</button></td>
+                    <td colspan="2">
+                        <textarea name="ques" disabled="disabled" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttons" disabled="disabled">Ask it</button>
+                    </td>
+                    <td style="text-align: right">
+                        <button class="buttons" id="hideForm" disabled="disabled">Hide It</button>
+                    </td>
                 </tr>
             </table>
         </form>

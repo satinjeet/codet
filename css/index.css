@@ -15,7 +15,7 @@ body {
 }
 
 .page1 {
-    background: #b3d4dc;
+    background: #D9E2EE;
     background-attachment: fixed;
 }
 
@@ -107,6 +107,7 @@ li.styled{
     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
     border-radius: 5px;
     background: url('./images/container.png');
+    font-family: 'Fjord One', serif;
 }
 
 #color-selector {
@@ -145,4 +146,48 @@ li.styled{
   height: 100px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 255)), to(rgba(255, 255, 255, 0)));
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 255), rgba(255, 255, 255, 0));
+}
+
+.header {
+    font-size: large;
+    color: black;
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.form td {
+    padding: 25px;
+}
+
+.form input,textarea {
+    padding: 5px;
+    width: 400px;
+}
+
+.form input,textarea {
+    padding: 5px;
+    width: 400px;
+}
+
+.buttons {
+    width: 100px;
+}
+
+.warning {
+    background: #fda3a1;
+    font-size: larger;
+}
+
+.highlights {
+    color: blueviolet;font-family: monospace; font-size: large;
+}
+
+.uncover {
+    cursor: pointer;
+}
+
+#tech-specs {
+    display: none;
 }
