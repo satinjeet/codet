@@ -13,6 +13,7 @@ window.Application = (function() {
 
   Application.prototype.load = function(e) {
     var req, route;
+    $("#lightbox").show();
     route = $(e.target).attr("href");
     return req = $.ajax({
       url: "/parts/get.php",
@@ -25,7 +26,8 @@ window.Application = (function() {
   };
 
   Application.prototype.render = function(response) {
-    return $("#container").html(response);
+    $("#container").html(response);
+    return $("#lightbox").hide();
   };
 
   return Application;

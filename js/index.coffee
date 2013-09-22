@@ -3,6 +3,7 @@ class window.Application
   defaultRoute = "#home"
   
   load: (e)=>
+    $("#lightbox").show();
     route = $(e.target).attr("href")
     req = $.ajax
       url: "/parts/get.php"
@@ -13,6 +14,7 @@ class window.Application
       
   render: (response)=>
     $("#container").html response
+    $("#lightbox").hide();
     
 class window.BootStrap
   
