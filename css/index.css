@@ -191,3 +191,55 @@ li.styled{
 #tech-specs {
     display: none;
 }
+
+.bigtab {
+    height: 250px;
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.bigtab .avatar {
+    width: 250px;
+    height: 250px;
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.contact-bar li{
+    font-family: StarTrek;
+    display: inline;
+    margin-right: 15px;
+}
+
+.contact-bar li a{
+    text-decoration: none;
+    target-new: tab;
+}
+
+.twitter {
+    color: #108af6;
+    background : url("../css/images/white_twitter.png") no-repeat;
+    background-size: contain;
+    font-size: 25px;
+    padding-left: 35px;
+}
+
+.google {
+    color: #f63510;
+    background : url("../css/images/google_plus_icon.png") no-repeat;
+    background-size: contain;
+    font-size: 25px;
+    padding-left: 35px;
+}
+
+.fb {
+    color: #3c68d2;
+    background : url("../css/images/fb.png") no-repeat;
+    background-size: contain;
+    font-size: 25px;
+    padding-left: 35px;
+}
