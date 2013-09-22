@@ -5,7 +5,7 @@
         <title>CodeTrek</title>
         <link rel="stylesheet" href="/css/index.css" />
         <script src="/js/jquery-1.8.3.js"></script>
-        <script src="/js/jquery-ui.js"></script>
+        <script src="/js/jquery-ui.min.js"></script>
         <script src="/js/jquery.cookie.js"></script>
         <script src="/js/main.js"></script>
     </head>
